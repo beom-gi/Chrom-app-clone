@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    text-align: center;
+    color: #fff;
+    padding-top: 15%;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 80%;
+}
+
+#login-form {
+    margin-top: 5%;
+}
+#login-form input {
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #fff;
+    caret-color: #fff;
+    margin: 2% 0;
+    color: #fff;
+    font-size: 2em;
+}
+
+#login-form input:focus {
+    outline: none;
+}
+
+#login-form input::placeholder {
+    color: #fff;
+}
+#clock {
+    font-size: 6em;
+}
+#greeting {
+    margin: 1% 0;
+}
+#quote {
+    margin-top: 10%;
+}
+#quote span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-form input {
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #fff;
+    caret-color: #fff;
+    margin: 1% 0;
+    color: #fff;
+}
+
+#todo-form input:focus {
+    outline: none;
+}
+
+#todo-form input::placeholder {
+    color: #fff;
+}
+
+#weather {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+}
