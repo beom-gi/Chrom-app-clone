@@ -96,3 +96,15 @@ img {
     top: 3%;
     right: 2%;
 }
+#clearbtn {
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    background-color: #163bac;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2%;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}

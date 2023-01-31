@@ -4,6 +4,7 @@ const greeting = document.querySelector('#greeting');
 const clockHidden = document.querySelector('#clock');
 const todoFormHidden = document.querySelector('#todo-form');
 const quoteHidden = document.querySelector('#quote');
+const clearBtn = document.querySelector('#clearbtn');
 
 const HIDDEN_CLASSNAME = 'hidden';
 const USERNAME_KEY = 'userName';
@@ -25,6 +26,7 @@ function paintGreetings() {
     clockHidden.classList.remove(HIDDEN_CLASSNAME);
     todoFormHidden.classList.remove(HIDDEN_CLASSNAME);
     quoteHidden.classList.remove(HIDDEN_CLASSNAME);
+    clearBtn.classList.remove(HIDDEN_CLASSNAME);
     navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);  // weather
 }
 
@@ -57,6 +59,12 @@ function onGeoOk(positon) {
 function onGeoError() {
     alert("Can't find you. No weather for you.");
 }
+
+function onClickClear() {
+    window.localStorage.clear();
+}
+
+clearBtn.addEventListener('click', onClickClear);
 
 
 
